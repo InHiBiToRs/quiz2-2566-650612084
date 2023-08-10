@@ -20,9 +20,9 @@ export default function HomePage() {
           PostText="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"
           likeNum={100}
         />
-        {comments.map((User) => (
+        {comments.map((User, i) => (
           <Comment
-            key={User.id}
+            key={i}
             username={User.username}
             userImagePath={User.userImagePath}
             commentText={User.commentText}

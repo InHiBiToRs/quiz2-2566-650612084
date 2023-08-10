@@ -34,9 +34,9 @@ export const Comment = ({
           )}
         </div>
       </div>
-      {replies.map((User) => (
+      {replies.map((User, i) => (
         <Reply
-          key={User.id}
+          key={i}
           username={User.username}
           userImagePath={User.userImagePath}
           replyText={User.replyText}
